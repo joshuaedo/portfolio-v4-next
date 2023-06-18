@@ -1,14 +1,32 @@
-import Image from "next/image";
+// import Image from "next/image";
+// import logo from "./assets/logo.jpg";
+import { Arrow } from "./image";
 
-export default function Home() {
-  return <main className="text-white m-auto p-5 text-5xl">Hey There!
-  <Image 
-  src="https://www.apple.com/v/home/bb/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_small_2x.jpg"
-  alt=""
-  width="750"
-  height="750"
-  />
-  </main>;
+{
+  /* <Image
+          src={logo}
+          alt=""
+          width="2172"
+          height="1790"
+          className="object-contain w-12 h-12 shadow-md shadow-white bg-transparent"
+        /> */
 }
 
-
+export default function Home() {
+  return (
+    <main>
+      <section className="px-0 md:px-52 h-screen">
+        <div className="text-6xl md:text-9xl opacity-75">
+          <p>SOFTWARE</p>
+          <p>DEVELOPER</p>
+        </div>
+      </section>
+      <section className="h-screen">
+        <Arrow h="h-4" w="h-4" color="white" />
+      </section>
+      <section className="h-screen">
+        <Arrow h="h-4" w="h-4" color="white" />
+      </section>
+    </main>
+  );
+}

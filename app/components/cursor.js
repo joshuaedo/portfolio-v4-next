@@ -25,7 +25,7 @@ const Cursor = () => {
 
   return (
     <div
-      className="cursor hidden md:inline fixed w-12 h-12 rounded-full bg-white transition mix-blend-difference backdrop-filter backdrop-grayscale"
+      className="cursor hidden md:inline absolute w-12 h-12 rounded-full bg-white transition mix-blend-difference backdrop-filter backdrop-grayscale z-20"
       style={cursorStyle}
     />
   );
