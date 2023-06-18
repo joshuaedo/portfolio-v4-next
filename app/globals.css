@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "sanFrancisco";
+  src: url("./fonts/SF-Pro.ttf");
+  font-display: swap;
+  font-style: normal;
+}
+
 @layer components {
   .link {
     @apply hover:underline cursor-pointer;
