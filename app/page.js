@@ -7,7 +7,7 @@ import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-export default function Home() {
+export default function HomePage() {
   const main = useRef();
   const smoother = useRef();
 
