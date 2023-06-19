@@ -17,15 +17,15 @@ const Cursor = () => {
   }, []);
 
   const cursorStyle = {
-    transform: `translate(${mousePosition.x - 20}px, ${
-      mousePosition.y - 20
-    }px)`,
+    transform: `translate3d(${mousePosition.x - 25}px, ${
+      mousePosition.y - 25
+    }px, 0)`,
     transition: "transform 0.1s",
   };
 
   return (
     <div
-      className="cursor hidden md:inline absolute w-12 h-12 rounded-full bg-white transition mix-blend-difference backdrop-filter backdrop-grayscale z-20"
+      className="hidden md:flex fixed w-[50px] h-[50px] rounded-full bg-white transition mix-blend-difference backdrop-filter backdrop-grayscale z-20 pointer-events-none"
       style={cursorStyle}
     />
   );
