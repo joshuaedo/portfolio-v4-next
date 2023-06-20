@@ -50,7 +50,7 @@ export default function HomePage() {
     <div data-scroll-container className="data-scroll-container p-4 md:px-52">
       <section
         data-scroll-section
-        className="relative h-[65vh] md:min-h-screen flex pt-10 justify-center font-medium mb-20 md:mb-36"
+        className="relative h-[80vh] md:min-h-screen flex pt-14 justify-center font-medium mb-20 md:mb-36"
       >
         <div className="text-center md:text-end">
           <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
@@ -64,7 +64,7 @@ export default function HomePage() {
           </p>
         </div>
 
-        <div className="line-height absolute bottom-16 right-10 md:right-3 text-2xs md:text-sm flex max-w-[7rem] md:max-w-[10rem] text-right">
+        <div className="line-height absolute bottom-20 right-10 md:right-3 text-2xs md:text-sm flex max-w-[7rem] md:max-w-[10rem] text-right">
           <div>AVAILABLE FOR FREELANCE WORK</div>
         </div>
       </section>
