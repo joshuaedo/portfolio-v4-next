@@ -10,9 +10,11 @@ const Cursor = () => {
     };
 
     document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("scroll", handleMouseMove);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("scroll", handleMouseMove);
     };
   }, []);
 
@@ -20,7 +22,7 @@ const Cursor = () => {
     transform: `translate3d(${mousePosition.x - 25}px, ${
       mousePosition.y - 25
     }px, 0)`,
-    transition: "transform 0.1s",
+    transition: "transform 0.15s",
   };
 
   return (
