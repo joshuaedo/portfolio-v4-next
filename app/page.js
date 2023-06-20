@@ -10,6 +10,7 @@ export default function HomePage() {
   const [
     amazonOne,
     amazonTwo,
+    amazonThree,
     appleOne,
     appleTwo,
     googleOne,
@@ -17,10 +18,15 @@ export default function HomePage() {
     joshuaGPTOne,
     joshuaGPTTwo,
     joshuaGPTThree,
+    joshuaGPTFour,
+    joshuaGPTFive,
     netflixOne,
     netflixTwo,
+    netflixThree,
+    netflixFour,
     spotifyOne,
     spotifyTwo,
+    spotifyThree,
   ] = homeImages;
 
   useLayoutEffect(() => {
@@ -78,9 +84,21 @@ export default function HomePage() {
               data-scroll-delay="0.0045"
               className="space-y-32"
             >
-              <HomeCard imgSrc={spotifyTwo} name="spotify" />
-              <HomeCard imgSrc={netflixTwo} name="netflix" />
-              <HomeCard imgSrc={appleTwo} name="apple" />
+              <HomeCard
+                imgSrc={spotifyThree}
+                name="spotify"
+                href="joshuaedo-spotify.vercel.app"
+              />
+              <HomeCard
+                imgSrc={netflixTwo}
+                name="netflix"
+                href="joshuaedo-binge.vercel.app"
+              />
+              <HomeCard
+                imgSrc={appleTwo}
+                name="apple"
+                href="apple-joshuaedo.vercel.app"
+              />
             </div>
             <div
               data-scroll
@@ -88,8 +106,16 @@ export default function HomePage() {
               data-scroll-delay="0.0090"
               className="space-y-32"
             >
-              <HomeCard imgSrc={joshuaGPTThree} name="joshuaGPT" />
-              <HomeCard imgSrc={googleTwo} name="google" />
+              <HomeCard
+                imgSrc={joshuaGPTFive}
+                name="joshuaGPT"
+                href="t.me/joshuaedo_bot"
+              />
+              <HomeCard
+                imgSrc={googleTwo}
+                name="google"
+                href="joshuaedo-google.vercel.app"
+              />
             </div>
           </div>
         </div>
