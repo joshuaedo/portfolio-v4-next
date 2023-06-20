@@ -119,10 +119,16 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        <div className="hidden md:flex absolute bottom-10 right-10 md:right-3 text-2xs md:text-sm max-w-[7rem] md:max-w-[10rem] text-right">
+          <div>VIEW THE REST OF MY WORK</div>
+        </div>
       </section>
 
-      <section className="min-h-screen">
-        <Arrow h="h-4" w="h-4" color="white" />
+      <section className="min-h-screen relative">
+        <div className="text-white flex md:hidden absolute top-10 text-2xs text-center items-center justify-center w-full">
+          <div>VIEW THE REST OF MY WORK</div>
+        </div>
+        {/* <Arrow h="h-4" w="h-4" color="white" /> */}
       </section>
     </div>
   );
