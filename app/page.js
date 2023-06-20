@@ -48,7 +48,10 @@ export default function HomePage() {
 
   return (
     <div data-scroll-container className="data-scroll-container p-4 md:px-52">
-      <section className="relative h-[65vh] md:min-h-screen flex items-center justify-center font-medium mb-20 md:mb-36">
+      <section
+        data-scroll-section
+        className="relative h-[65vh] md:min-h-screen flex items-center justify-center font-medium mb-20 md:mb-36"
+      >
         <div className="text-center md:text-end">
           <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
             SOFTWARE
@@ -68,7 +71,7 @@ export default function HomePage() {
 
       <section
         data-scroll-section
-        className="min-h-screen relative mb-12 md:mb-36"
+        className="min-h-screen relative mb-12 md:mb-36 bg-black"
       >
         <div className="text-center md:text-start">
           <p className="text-4xl md:text-7xl drop-shadow-lg text-[#A3A3A3] border-b-2">
@@ -124,12 +127,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="min-h-screen relative">
+      <section data-scroll-section className="min-h-screen relative">
         <div className="text-white flex md:hidden absolute top-10 text-2xs text-center items-center justify-center w-full">
           <div>VIEW THE REST OF MY WORK</div>
         </div>
-        {/* <Arrow h="h-4" w="h-4" color="white" /> */}
       </section>
+      {/* 
+      <section data-scroll-section className="relative">
+        <Arrow h="h-4" w="h-4" color="white" />
+      </section> */}
     </div>
   );
 }

@@ -11,12 +11,12 @@ export default function HomeCard({ imgSrc, name, href }) {
             height={1000}
             width={1000}
             alt={name}
-            className="h-[320px] md:h-[457px] w-[233px] md:w-[332px] object-cover rounded-sm"
+            className="h-[320px] md:h-[457px]  w-[233px] md:w-[332px] object-cover rounded-sm"
             quality={100}
           />
         </div>
-        <div>
-          <p className="font-thin text-2xl md:text-3xl pt-4 pl-12 md:pl-1">
+        <div className="flex items-center justify-center">
+          <p className="font-thin text-2xl md:text-3xl inline pt-3 w-[233px] md:w-[332px]">
             {name}
           </p>
         </div>

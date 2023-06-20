@@ -10,14 +10,3 @@ export default function Navbar() {
     </>
   );
 }
-
-// import logo from "./assets/logo.jpg";
-{
-  /* <Image
-          src={logo}
-          alt=""
-          width="2172"
-          height="1790"
-          className="object-contain w-12 h-12 shadow-md shadow-white bg-transparent"
-        /> */
-}

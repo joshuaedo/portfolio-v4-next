@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-black text-white tracking-wider container`}
+        className={`${inter.className} bg-black text-white tracking-wider container overflow-hidden`}
       >
         <Cursor />
         <Navbar />
