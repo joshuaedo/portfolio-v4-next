@@ -3,18 +3,30 @@ import { useEffect, useState } from "react";
 
 const Cursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.pageX, y: e.pageY });
+      setIsVisible(true);
+    };
+
+    const handleScroll = () => {
+      setIsVisible(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsVisible(false);
     };
 
     document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("scroll", handleMouseMove);
+    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("scroll", handleMouseMove);
+      document.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
@@ -22,7 +34,8 @@ const Cursor = () => {
     transform: `translate3d(${mousePosition.x - 25}px, ${
       mousePosition.y - 25
     }px, 0)`,
-    transition: "transform 0.15s",
+    opacity: isVisible ? 1 : 0,
+    transition: "transform 0.15s, opacity 0.15s",
   };
 
   return (
