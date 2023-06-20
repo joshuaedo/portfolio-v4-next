@@ -50,9 +50,9 @@ export default function HomePage() {
     <div data-scroll-container className="data-scroll-container p-4 md:px-52">
       <section
         data-scroll-section
-        className="relative h-[80vh] md:min-h-screen flex pt-14 justify-center font-medium mb-20 md:mb-36"
+        className="relative h-[70vh] md:h-[80vh] flex items-center justify-center font-medium mb-20 md:mb-36"
       >
-        <div className="text-center md:text-end">
+        <div className="text-center md:text-end relative">
           <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
             SOFTWARE
           </p>
@@ -62,10 +62,6 @@ export default function HomePage() {
           <p className="text-2xs md:text-sm inline">
             SPECIALIZED IN FRONTEND DEVELOPMENT
           </p>
-        </div>
-
-        <div className="line-height absolute bottom-20 right-10 md:right-3 text-2xs md:text-sm flex max-w-[7rem] md:max-w-[10rem] text-right">
-          <div>AVAILABLE FOR FREELANCE WORK</div>
         </div>
       </section>
 
@@ -135,6 +131,9 @@ export default function HomePage() {
       {/* 
       <section data-scroll-section className="relative">
         <Arrow h="h-4" w="h-4" color="white" />
+        <div className="line-height absolute bottom-20 md:bottom-50 right-10 md:right-3 text-2xs md:text-sm flex max-w-[7rem] md:max-w-[10rem] text-right">
+            <div>AVAILABLE FOR FREELANCE WORK</div>
+          </div>
       </section> */}
     </div>
   );
