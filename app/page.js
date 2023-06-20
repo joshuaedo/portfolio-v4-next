@@ -50,7 +50,7 @@ export default function HomePage() {
     <div data-scroll-container className="data-scroll-container p-4 md:px-52">
       <section
         data-scroll-section
-        className="relative h-[70vh] md:h-[80vh] flex items-center justify-center font-medium mb-20 md:mb-36"
+        className="relative h-[70vh] md:h-[80vh] flex items-center justify-center font-medium mb-28 md:mb-36"
       >
         <div className="text-center md:text-end relative">
           <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
