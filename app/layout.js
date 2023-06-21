@@ -1,10 +1,8 @@
-// "use client";
-import "./globals.css";
-import "./locomotive-scroll.css";
+import "./styles/globals.css";
+import "./styles/locomotive-scroll.css";
+import "./styles/text-sphere.css";
 import Navbar from "./components/navbar";
 import Cursor from "./components/cursor";
-// import { Inter } from "next/font/google";
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Joshua Edo • Software Developer",

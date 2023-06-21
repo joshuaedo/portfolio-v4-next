@@ -1,10 +1,10 @@
 "use client";
-import { Arrow } from "./image";
 import { useLayoutEffect } from "react";
-
 import Marquee from "./components/marquee";
 import HeroSection from "./components/heroSection";
 import ProjectsSection from "./components/projectsSection";
+import StackSection from "./components/stackSection";
+// import { Arrow } from "./image";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 // import gsap from "gsap";
 // gsap.registerPlugin(ScrollTrigger);
@@ -63,9 +63,16 @@ export default function HomePage() {
           </section>
         </div>
 
-        <section data-scroll-section className="text-white">
+        <section data-scroll-section className="text-white hidden md:inline">
           <Marquee />
         </section>
+
+        {/* <section
+          data-scroll-section
+          className="flex items-center justify-center"
+        >
+          <StackSection />
+        </section> */}
 
         <section className="bottom-padding h-[12px] md:h-[120px]" />
       </div>
