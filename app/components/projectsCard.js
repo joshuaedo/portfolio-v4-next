@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeCard({ imgSrc, name, href }) {
+export default function ProjectsCard({ imgSrc, name, href }) {
   return (
     <div className="px-[1.5rem] md:pl-[2rem]">
       <Link href={`https://${href}`} target="_blank" rel="noopener noreferrer">
