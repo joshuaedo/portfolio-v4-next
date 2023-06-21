@@ -31,18 +31,38 @@ export default function HomePage() {
 
   useLayoutEffect(() => {
     let scroll;
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: true,
-        resetNativeScroll: true,
-      });
-    });
 
-    // `useEffect`'s cleanup phase
+    import("locomotive-scroll")
+      .then((locomotiveModule) => {
+        scroll = new locomotiveModule.default({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+        });
+        new ResizeObserver(() => scroll.update()).observe(
+          document.querySelector("[data-scroll-container]")
+        );
+        setTimeout(() => {
+          scroll.init();
+        }, 100);
+        document.addEventListener("DOMContentLoaded", function () {
+          function ScrollUpdateDelay() {
+            setTimeout(function () {
+              scroll.update();
+            }, 500);
+          }
+
+          ScrollUpdateDelay();
+        });
+      })
+      .catch((error) => {
+        // Handle import error here
+        console.error("Failed to import locomotive-scroll", error);
+      });
+
     return () => {
-      if (scroll) scroll.destroy();
+      if (scroll) {
+        scroll.destroy();
+      }
     };
   }, []);
 
@@ -65,10 +85,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        data-scroll-section
-        className="min-h-screen relative mb-12 md:mb-36 bg-black"
-      >
+      <section data-scroll-section className="relative bg-black">
         <div className="text-center md:text-start">
           <p className="text-4xl md:text-7xl drop-shadow-lg text-[#A3A3A3] border-b-2">
             PROJECTS
@@ -77,6 +94,7 @@ export default function HomePage() {
         </div>
         <div className="mt-20 md:mt-40">
           <div className="inline md:flex justify-around items-center space-y-32 md:space-y-1">
+            {" "}
             <div
               data-scroll
               data-scroll-speed="0.45"
@@ -123,17 +141,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section data-scroll-section className="min-h-screen relative">
+      <section className="helper-section" />
+
+      {/* <section data-scroll-section class="relative marquee text-white">
         <div className="text-white flex md:hidden absolute top-10 text-2xs text-center items-center justify-center w-full">
           <div>VIEW THE REST OF MY WORK</div>
         </div>
-      </section>
-      {/* 
-      <section data-scroll-section className="relative">
-        <Arrow h="h-4" w="h-4" color="white" />
-        <div className="line-height absolute bottom-20 md:bottom-50 right-10 md:right-3 text-2xs md:text-sm flex max-w-[7rem] md:max-w-[10rem] text-right">
-            <div>AVAILABLE FOR FREELANCE WORK</div>
-          </div>
+        <div class="marquee__group">
+          <span>hello there</span>
+          <span>hello there</span>
+          <span>hello there</span>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>hello there</span>
+          <span>hello there</span>
+          <span>hello there</span>
+        </div>
       </section> */}
     </div>
   );
