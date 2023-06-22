@@ -9,7 +9,7 @@
   transition: all 0.2s;
 }
 .project:last-of-type {
-  border-bottom: 1px solid rgb(201, 201, 201);
+  border-bottom: 1px solid white;
 }
 
 .project:hover {
@@ -25,13 +25,32 @@
 }
 
 .project h2 {
-  font-size: 60px;
-  margin: 0px;
-  font-weight: 400;
   transition: all 0.4s;
 }
 
 .project p {
   transition: all 0.4s;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .project p {
+    display: none;
+  }
+
+  .project h2 {
+    font-weight: 100;
+  }
+
+  .project:hover h2 {
+    transform: translateX(10px);
+  }
+
+  .project {
+    display: inline;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 25px 1rem 25px 1rem;
+  }
 }

@@ -90,9 +90,12 @@ export default function Index({ modal, projects }) {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className={styles.modalContainer}
+        className={`hidden md:flex ${styles.modalContainer}`}
       >
-        <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
+        <div
+          style={{ top: index * -100 + "%" }}
+          className={`${styles.modalSlider}`}
+        >
           {projects.map((project, index) => {
             const { src, color } = project;
             return (
