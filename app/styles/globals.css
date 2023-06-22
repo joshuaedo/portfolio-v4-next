@@ -28,41 +28,6 @@ body {
   line-height: 1.5;
 }
 
-.marquee {
-  display: flex;
-  overflow: hidden;
-  height: 10vh;
-  user-select: none;
-  gap: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.marquee__group {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  min-width: 100%;
-  animation: scroll 15s linear infinite reverse;
-}
-
-.marquee__group span {
-  font-size: 5vw;
-  font-weight: 100;
-  white-space: nowrap;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 2rem));
-  }
-}
-
 html,
 body,
 div,

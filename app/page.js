@@ -54,22 +54,24 @@ export default function HomePage() {
           >
             <HeroSection />
           </section>
+        </div>
 
+        <div className="md:px-52">
           <section data-scroll-section className="relative bg-black">
             <ProjectsSection />
           </section>
-        </div>
 
-        {/* <section data-scroll-section className="text-white">
-          <Marquee />
-        </section> */}
-
-        {/* <section
+          {/* <section
           data-scroll-section
           className="flex items-center justify-center"
         >
           <StackSection />
         </section> */}
+        </div>
+
+        <section>
+          <Marquee />
+        </section>
 
         <section className="bottom-padding h-[12px] md:h-[120px]" />
       </div>
