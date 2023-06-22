@@ -53,7 +53,7 @@ export default function MobileNavbar() {
             </div>
           </div>
 
-          <div className="h-[80vh] relative p-5">
+          <div className="hidden md:flex h-[80vh] relative p-5">
             <div className="space-y-6 absolute bottom-10">
               <div
                 onClick={() => navigateToLink("/")}
