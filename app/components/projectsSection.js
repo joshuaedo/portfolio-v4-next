@@ -42,17 +42,20 @@ export default function ProjectsSection() {
             className="space-y-32"
           >
             <ProjectsCard
-              imgSrc={spotifyThree}
+              imgSrcOne={spotifyThree}
+              imgSrcTwo={spotifyOne}
               name="spotify"
               href="joshuaedo-spotify.vercel.app"
             />
             <ProjectsCard
-              imgSrc={netflixTwo}
+              imgSrcOne={netflixTwo}
+              imgSrcTwo={netflixOne}
               name="netflix"
               href="joshuaedo-binge.vercel.app"
             />
             <ProjectsCard
-              imgSrc={appleTwo}
+              imgSrcOne={appleTwo}
+              imgSrcTwo={appleOne}
               name="apple"
               href="apple-joshuaedo.vercel.app"
             />
@@ -64,12 +67,14 @@ export default function ProjectsSection() {
             className="space-y-32"
           >
             <ProjectsCard
-              imgSrc={joshuaGPTFive}
+              imgSrcOne={joshuaGPTFive}
+              imgSrcTwo={joshuaGPTOne}
               name="joshuaGPT"
               href="t.me/joshuaedo_bot"
             />
             <ProjectsCard
-              imgSrc={googleTwo}
+              imgSrcOne={googleTwo}
+              imgSrcTwo={googleOne}
               name="google"
               href="joshuaedo-google.vercel.app"
             />

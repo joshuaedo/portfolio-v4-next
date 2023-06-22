@@ -5,9 +5,6 @@ import HeroSection from "./components/heroSection";
 import ProjectsSection from "./components/projectsSection";
 import StackSection from "./components/stackSection";
 // import { Arrow } from "./image";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import gsap from "gsap";
-// gsap.registerPlugin(ScrollTrigger);
 
 export default function HomePage() {
   useLayoutEffect(() => {
@@ -63,9 +60,9 @@ export default function HomePage() {
           </section>
         </div>
 
-        <section data-scroll-section className="text-white hidden md:inline">
+        {/* <section data-scroll-section className="text-white">
           <Marquee />
-        </section>
+        </section> */}
 
         {/* <section
           data-scroll-section

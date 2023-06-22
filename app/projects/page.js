@@ -40,22 +40,29 @@ const projects = [
     color: "#8C8C8C",
     year: 2023,
   },
-  {
-    title: "Ryter",
-    src: "ryter.png",
-    color: "#EFE8D3",
+    {
+    title: "Cleander",
+    src: "cleander.png",
+    color: "#FFF",
     year: 2022,
   },
+  
   {
     title: "Google",
     src: "google.png",
     color: "#706D63",
     year: 2023,
   },
-  {
-    title: "Cleander",
-    src: "cleander.png",
+ {
+    title: "Style Your Div",
+    src: "style-your-div.png",
     color: "#FFF",
+    year: 2023,
+  },
+  {
+    title: "Ryter",
+    src: "ryter.png",
+    color: "#EFE8D3",
     year: 2022,
   },
   {
@@ -76,12 +83,7 @@ const projects = [
     color: "#706D63",
     year: 2022,
   },
-  {
-    title: "Style Your Div",
-    src: "style-your-div.png",
-    color: "#FFF",
-    year: 2023,
-  },
+ 
   {
     title: "Portfolio V3",
     src: "portfolio-v3.png",
