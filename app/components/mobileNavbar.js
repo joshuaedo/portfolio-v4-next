@@ -63,7 +63,7 @@ export default function MobileNavbar() {
             </Link>
             <Link href="/contact">
               <p className="font-medium">Contact</p>
-              <p className="text-2xs">LET'S TALK</p>
+              <p className="text-2xs">LET&apos;S TALK</p>
             </Link>
           </div>
         </div>
