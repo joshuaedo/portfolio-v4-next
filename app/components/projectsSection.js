@@ -1,5 +1,6 @@
 import ProjectsCard from "./projectsCard";
 import { Arrow, homeImages } from "../image";
+import Link from "next/link";
 
 export default function ProjectsSection() {
   const [
@@ -82,7 +83,7 @@ export default function ProjectsSection() {
         </div>
       </div>
       <div className="hidden md:flex absolute bottom-10 right-10 md:right-3 text-2xs md:text-sm max-w-[7rem] md:max-w-[10rem] text-right">
-        <div>VIEW THE REST OF MY WORK</div>
+        <Link href="/projects">VIEW THE REST OF MY WORK</Link>
       </div>
     </>
   );

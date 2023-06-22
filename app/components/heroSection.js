@@ -8,7 +8,7 @@ export default function HeroSection() {
         <p className="text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
           ENGINEER
         </p>
-        <p className="text-2xs md:text-sm inline">
+        <p className="md:font-normal text-2xs md:text-sm inline">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </p>
       </div>

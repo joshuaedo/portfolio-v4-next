@@ -1,7 +1,8 @@
 import "./styles/globals.css";
 import "./styles/locomotive-scroll.css";
-import "./styles/text-sphere.css";
+// import "./styles/text-sphere.css";
 import Navbar from "./components/navbar";
+import MobileNavbar from "./components/mobileNavbar";
 import Cursor from "./components/cursor";
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`bg-black text-white tracking-wider w-full`}>
         <Cursor />
         <Navbar />
+        <MobileNavbar />
         {children}
       </body>
     </html>
