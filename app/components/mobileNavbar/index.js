@@ -38,8 +38,8 @@ export default function MobileNavbar() {
           </div>
         </div>
       ) : (
-        <div className="bg-[#A3A3A3] h-screen w-screen sticky top-0 z-10 text-black">
-          <div className="flex md:hidden h-20 w-full p-4 md:p-10 items-center justify-between text-lg">
+        <div className=" md:hidden bg-[#A3A3A3] h-screen w-screen sticky top-0 z-10 text-black">
+          <div className="flex h-20 w-full p-4 md:p-10 items-center justify-between text-lg">
             <div className="inline font-medium cursor-pointer">
               <Link href="/">Joshua Edo</Link>
             </div>
@@ -53,7 +53,7 @@ export default function MobileNavbar() {
             </div>
           </div>
 
-          <div className="flex md:hidden h-[80vh] relative p-5">
+          <div className="h-[80vh] relative p-5">
             <div className="space-y-6 absolute bottom-10">
               <div
                 onClick={() => navigateToLink("/")}
