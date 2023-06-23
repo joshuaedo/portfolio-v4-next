@@ -11,7 +11,7 @@ export default function HomePage() {
         </section>
 
         <section className="font-medium mb-52 md:mb-72">
-          <Marquee />
+          {/* <Marquee /> */}
         </section>
 
         <section className="relative bg-black md:px-52">
