@@ -32,18 +32,34 @@ export default function Footer() {
           className={`md:hidden flex cursor-pointer w-[50%] justify-evenly text-center`}
         >
           <div className="justify-evenly">
-            <Link href="https://github.com/joshuaedo">
+            <Link
+              href="https://github.com/joshuaedo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p className="text-2xs">GITHUB</p>
             </Link>
-            <Link href="https://twitter.com/thegr8joshua">
+            <Link
+              href="https://twitter.com/thegr8joshua"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p className="text-2xs">TWITTER</p>
             </Link>
           </div>
           <div className="justify-evenly">
-            <Link href="https://www.linkedin.com/in/joshuaedo">
+            <Link
+              href="https://www.linkedin.com/in/joshuaedo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p className="text-2xs">LINKED-IN</p>
             </Link>
-            <Link href="joshua.edo01@gmail.com">
+            <Link
+              href="joshua.edo01@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <p className="text-2xs">EMAIL</p>
             </Link>
           </div>
@@ -52,17 +68,33 @@ export default function Footer() {
         <div
           className={`hidden md:flex cursor-pointer w-[50%] justify-evenly text-center`}
         >
-          <Link href="https://github.com/joshuaedo">
+          <Link
+            href="https://github.com/joshuaedo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="text-2xs">GITHUB</p>
           </Link>
-          <Link href="https://twitter.com/thegr8joshua">
+          <Link
+            href="https://twitter.com/thegr8joshua"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="text-2xs">TWITTER</p>
           </Link>
 
-          <Link href="https://www.linkedin.com/in/joshuaedo">
+          <Link
+            href="https://www.linkedin.com/in/joshuaedo"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="text-2xs">LINKED-IN</p>
           </Link>
-          <Link href="mailto:joshua.edo01@gmail.com">
+          <Link
+            href="mailto:joshua.edo01@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="text-2xs">EMAIL</p>
           </Link>
         </div>
