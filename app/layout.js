@@ -2,8 +2,10 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import MobileNavbar from "./components/mobileNavbar";
-import Cursor from "./components/cursor";
 import { LenisScroller } from "./components/lenisScroller";
+import Cursor from "./components/cursor";
+import { Suspense } from "react";
+import Loader from "./loading";
 
 export const metadata = {
   title: "Joshua Edo • Software Developer",
@@ -18,12 +20,14 @@ export default function RootLayout({ children }) {
         rel="stylesheet"
       />
       <body className={`bg-black text-white tracking-wider w-full`}>
-        <LenisScroller />
         <Cursor />
-        <Navbar />
-        <MobileNavbar />
-        {children}
-        <Footer />
+        <Suspense fallback={<Loader />}>
+          <LenisScroller />
+          <Navbar />
+          <MobileNavbar />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

@@ -122,8 +122,8 @@ export default function Index({ modal, projects }) {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-      ></motion.div>
-
+      ></motion.div> */}
+      {/*
       <motion.div
         ref={cursorLabel}
         className={styles.cursorLabel}
