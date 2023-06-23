@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         rel="stylesheet"
       />
       <body className={`bg-black text-white tracking-wider w-full`}>
-        <LenisScroller />
+        {/* <LenisScroller /> */}
         <Cursor />
         <Navbar />
         <MobileNavbar />
