@@ -21,66 +21,28 @@ export default function Footer() {
   return (
     <>
       <footer
-        className={`flex h-20 w-full bg-black bg-opacity-50 p-4 md:p-10 items-center justify-between text-lg`}
+        className={`grid grid-cols-1 md:grid-cols-2 h-[15vh] w-full bg-black bg-opacity-50 p-4 md:p-10 space-y-3`}
       >
-        <div className={`flex cursor-pointer w-[50%] justify-evenly`}>
+        <div className={`flex cursor-pointer justify-evenly  text-lg`}>
           <p>{copyright}</p>
           <p>{time}</p>
         </div>
-        {/* Mobile */}
         <div
-          className={`md:hidden flex cursor-pointer w-[50%] justify-evenly text-center`}
-        >
-          <div className="justify-evenly">
-            <Link
-              href="https://github.com/joshuaedo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-2xs">GITHUB</p>
-            </Link>
-            <Link
-              href="https://twitter.com/thegr8joshua"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-2xs">TWITTER</p>
-            </Link>
-          </div>
-          <div className="justify-evenly">
-            <Link
-              href="https://www.linkedin.com/in/joshuaedo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-2xs">LINKED-IN</p>
-            </Link>
-            <Link
-              href="joshua.edo01@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <p className="text-2xs">EMAIL</p>
-            </Link>
-          </div>
-        </div>
-        {/* Laptop */}
-        <div
-          className={`hidden md:flex cursor-pointer w-[50%] justify-evenly text-center`}
+          className={`flex cursor-pointer justify-evenly text-center text-xs`}
         >
           <Link
             href="https://github.com/joshuaedo"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-2xs">GITHUB</p>
+            <p className="">GITHUB</p>
           </Link>
           <Link
             href="https://twitter.com/thegr8joshua"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-2xs">TWITTER</p>
+            <p className="">TWITTER</p>
           </Link>
 
           <Link
@@ -88,14 +50,14 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-2xs">LINKED-IN</p>
+            <p className="">LINKED-IN</p>
           </Link>
           <Link
-            href="mailto:joshua.edo01@gmail.com"
+            href="joshua.edo01@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-2xs">EMAIL</p>
+            <p className="">EMAIL</p>
           </Link>
         </div>
       </footer>
