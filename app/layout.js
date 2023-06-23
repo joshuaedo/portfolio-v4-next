@@ -1,13 +1,14 @@
 import "./styles/globals.css";
-import "./styles/locomotive-scroll.css";
-// import "./styles/text-sphere.css";
+import "./styles/lenis.css";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import MobileNavbar from "./components/mobileNavbar";
 import Cursor from "./components/cursor";
+import { LenisScroller } from "./components/lenisScroller";
 
 export const metadata = {
   title: "Joshua Edo • Software Developer",
-  description: "Joshua Edo's Portfolio page",
+  description: "Joshua Edo's Portfoilio Website",
 };
 
 export default function RootLayout({ children }) {
@@ -18,10 +19,12 @@ export default function RootLayout({ children }) {
         rel="stylesheet"
       />
       <body className={`bg-black text-white tracking-wider w-full`}>
+        <LenisScroller />
         <Cursor />
         <Navbar />
         <MobileNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

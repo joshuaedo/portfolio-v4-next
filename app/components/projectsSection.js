@@ -1,3 +1,4 @@
+"use client";
 import ProjectsCard from "./projectsCard";
 import { Arrow, homeImages } from "../image";
 import Link from "next/link";
@@ -37,9 +38,6 @@ export default function ProjectsSection() {
         <div className="inline md:flex justify-around items-center space-y-32 md:space-y-1">
           {" "}
           <div
-            data-scroll
-            data-scroll-speed="0.45"
-            data-scroll-delay="0.0045"
             className="space-y-32"
           >
             <ProjectsCard
@@ -62,9 +60,6 @@ export default function ProjectsSection() {
             />
           </div>
           <div
-            data-scroll
-            data-scroll-speed="0.90"
-            data-scroll-delay="0.0090"
             className="space-y-32"
           >
             <ProjectsCard

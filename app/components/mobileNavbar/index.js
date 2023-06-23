@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./style.module.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+
 export default function MobileNavbar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
