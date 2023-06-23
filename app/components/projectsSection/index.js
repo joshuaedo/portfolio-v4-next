@@ -1,31 +1,8 @@
 "use client";
-import ProjectsCard from "./projectsCard";
-import { Arrow, homeImages } from "../image";
+import ProjectsCard from "../projectsCard";
 import Link from "next/link";
 
 export default function ProjectsSection() {
-  const [
-    amazonOne,
-    amazonTwo,
-    amazonThree,
-    appleOne,
-    appleTwo,
-    googleOne,
-    googleTwo,
-    joshuaGPTOne,
-    joshuaGPTTwo,
-    joshuaGPTThree,
-    joshuaGPTFour,
-    joshuaGPTFive,
-    netflixOne,
-    netflixTwo,
-    netflixThree,
-    netflixFour,
-    spotifyOne,
-    spotifyTwo,
-    spotifyThree,
-  ] = homeImages;
-
   return (
     <>
       <div className="text-center md:text-start">
@@ -37,40 +14,27 @@ export default function ProjectsSection() {
       <div className="mt-20 md:mt-40">
         <div className="inline md:flex justify-around items-center space-y-32 md:space-y-1">
           {" "}
-          <div
-            className="space-y-32"
-          >
+          <div className="space-y-32">
             <ProjectsCard
-              imgSrcOne={spotifyThree}
-              imgSrcTwo={spotifyOne}
+              i={3}
               name="spotify"
               href="joshuaedo-spotify.vercel.app"
             />
             <ProjectsCard
-              imgSrcOne={netflixTwo}
-              imgSrcTwo={netflixOne}
+              i={2}
               name="netflix"
               href="joshuaedo-binge.vercel.app"
             />
             <ProjectsCard
-              imgSrcOne={appleTwo}
-              imgSrcTwo={appleOne}
+              i={2}
               name="apple"
               href="apple-joshuaedo.vercel.app"
             />
           </div>
-          <div
-            className="space-y-32"
-          >
+          <div className="space-y-32">
+            <ProjectsCard i={5} name="joshuaGPT" href="t.me/joshuaedo_bot" />
             <ProjectsCard
-              imgSrcOne={joshuaGPTFive}
-              imgSrcTwo={joshuaGPTOne}
-              name="joshuaGPT"
-              href="t.me/joshuaedo_bot"
-            />
-            <ProjectsCard
-              imgSrcOne={googleTwo}
-              imgSrcTwo={googleOne}
+              i={2}
               name="google"
               href="joshuaedo-google.vercel.app"
             />

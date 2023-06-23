@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectsCard({ imgSrcOne, imgSrcTwo, name, href }) {
+export default function ProjectsCard({ i, name, href }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -19,7 +19,7 @@ export default function ProjectsCard({ imgSrcOne, imgSrcTwo, name, href }) {
         >
           <div className="relative">
             <Image
-              src={imgSrcOne}
+              src={`/images/home/${name}/${i}.jpg`}
               height={1000}
               width={1000}
               alt={name}
@@ -32,7 +32,7 @@ export default function ProjectsCard({ imgSrcOne, imgSrcTwo, name, href }) {
               }`}
             >
               <Image
-                src={imgSrcTwo}
+                src={`/images/home/${name}/1.jpg`}
                 height={1000}
                 width={1000}
                 alt={name}

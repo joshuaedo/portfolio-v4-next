@@ -1,5 +1,4 @@
-import "./styles/globals.css";
-import "./styles/lenis.css";
+import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import MobileNavbar from "./components/mobileNavbar";
@@ -8,7 +7,7 @@ import { LenisScroller } from "./components/lenisScroller";
 
 export const metadata = {
   title: "Joshua Edo • Software Developer",
-  description: "Joshua Edo's Portfoilio Website",
+  description: "Joshua Edo's Portfolio Website",
 };
 
 export default function RootLayout({ children }) {

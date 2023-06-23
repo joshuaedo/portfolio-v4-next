@@ -1,4 +1,5 @@
 "use client";
+import "./style.module.css";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 
