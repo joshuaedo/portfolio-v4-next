@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       <div className="p-4">
-        <section className="md:px-52 relative font-medium mb-12 md:mb-24">
+        <section className="inline md:flex md:px-52 relative font-medium mb-12 md:mb-24">
           <HeroSection />
         </section>
 
