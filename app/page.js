@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       <div className="p-4">
-        <section className="md:px-52 relative h-[70vh] md:h-[80vh] flex items-center justify-center font-medium mb-28 md:mb-36">
+        <section className="md:px-52 relative font-medium mb-28 md:mb-36">
           <HeroSection />
         </section>
 
