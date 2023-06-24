@@ -12,15 +12,11 @@ import {
 export default function HeroSection() {
   return (
     <>
-      <Canvas orthographic camera={{ position: [0, 0, 100], zoom: 100 }}>
+      {" "}
+      <Canvas orthographic camera={{ position: [0, 0, 40], zoom: 40 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 10]} />
         <Scene />
-        <axesHelper
-          scale={2}
-          position={[0, 0, 0]}
-          onUpdate={(self) => self.setColors("#ff2080", "#20ff80", "#2080ff")}
-        />
         <OrbitControls
           enableZoom={false}
           enablePan={false}
@@ -28,7 +24,6 @@ export default function HeroSection() {
           maxPolarAngle={Math.PI / 2}
         />
       </Canvas>
-
       <div className="text-center md:text-end relative">
         <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
           SOFTWARE
@@ -51,9 +46,6 @@ function Scene({ margin = 0.5 }) {
       <Center rotation={[-0.5, -0.25, 0]}>
         <Text3D
           curveSegments={32}
-          bevelEnabled
-          bevelSize={0.04}
-          bevelThickness={0.1}
           height={0.5}
           lineHeight={0.5}
           letterSpacing={-0.06}
@@ -61,7 +53,7 @@ function Scene({ margin = 0.5 }) {
           font="/Inter_Bold.json"
         >
           {`=)`}
-          <meshStandardMaterial color="white" />
+          <meshNormalMaterial />
         </Text3D>
       </Center>
     </>
