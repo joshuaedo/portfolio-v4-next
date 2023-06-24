@@ -14,9 +14,11 @@ export default function HomePage() {
           <Marquee />
         </section>
 
-        <section className="relative bg-black md:px-52">
-          <ProjectsSection />
-        </section>
+        <div className="md:px-52">
+          <section className="relative bg-black">
+            <ProjectsSection />
+          </section>
+        </div>
       </div>
     </>
   );

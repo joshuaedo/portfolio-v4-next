@@ -41,7 +41,10 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex absolute bottom-10 right-10 md:right-3 text-2xs md:text-sm max-w-[7rem] md:max-w-[10rem] text-right">
+      <div className="hidden md:flex absolute bottom-10 right-10 md:right-3 text-sm max-w-[7rem] md:max-w-[10rem] text-right">
+        <Link href="/projects">VIEW THE REST OF MY WORK</Link>
+      </div>
+      <div className="flex md:hidden text-xs items-center justify-center pt-10">
         <Link href="/projects">VIEW THE REST OF MY WORK</Link>
       </div>
     </>

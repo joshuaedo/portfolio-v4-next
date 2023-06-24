@@ -1,6 +1,7 @@
 .main {
   display: flex;
   height: auto;
+  overflow: hidden;
 }
 
 .slider {
