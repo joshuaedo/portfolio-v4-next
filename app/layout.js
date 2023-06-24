@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import MobileNavbar from "./components/mobileNavbar";
 import { LenisScroller } from "./components/lenisScroller";
 import Cursor from "./components/cursor";
+// import CustomCursor from "./components/customCursor";
 import { Suspense } from "react";
 import Loader from "./loading";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       />
       <body className={`bg-black text-white tracking-wider w-full`}>
         <Cursor />
+        {/* <CustomCursor /> */}
         <Suspense fallback={<Loader />}>
           <LenisScroller />
           <Navbar />
