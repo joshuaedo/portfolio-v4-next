@@ -6,11 +6,11 @@ export default function HomePage() {
   return (
     <>
       <div className="p-4">
-        <section className="md:px-52 relative font-medium mb-28 md:mb-36">
+        <section className="md:px-52 relative font-medium mb-12 md:mb-24">
           <HeroSection />
         </section>
 
-        <section className="font-medium mb-52 md:mb-72">
+        <section className="font-medium mb-12 md:mb-24">
           <Marquee />
         </section>
 

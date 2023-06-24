@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <>
       {" "}
-      <Canvas orthographic camera={{ position: [0, 0, 40], zoom: 40 }}>
+      <Canvas orthographic camera={{ position: [0, 0, 50], zoom: 50 }}>
         <ambientLight intensity={0.5} />
         <directionalLight position={[10, 10, 10]} />
         <Scene />
@@ -26,10 +26,10 @@ export default function HeroSection() {
       </Canvas>
       <div className="text-center md:text-end relative">
         <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
-          SOFTWARE
+          CREATIVE
         </p>
         <p className="text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
-          ENGINEER
+          DEVELOPER
         </p>
         <p className="md:font-normal text-2xs md:text-sm inline">
           SPECIALIZED IN FRONTEND DEVELOPMENT
