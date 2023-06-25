@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HeroSection() {
   return (
     <>
@@ -13,7 +14,9 @@ export default function HeroSection() {
       </div>
 
       <div className="flex justify-end mt-32">
-        <span className="title-text">AVAILABLE FOR HIRE</span>
+        <Link href="/#contact" onClick="lenis.scrollTo('#/contact')">
+          <span className="title-text link">AVAILABLE FOR HIRE</span>
+        </Link>
       </div>
     </>
   );

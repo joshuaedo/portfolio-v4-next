@@ -48,6 +48,7 @@ export default function Footer() {
   return (
     <>
       <footer
+        id="contact"
         className={`grid grid-cols-1 md:grid-cols-2 h-[12vh] w-full bg-black bg-opacity-50 p-4 md:p-10 font-medium text-sm space-y-2 md:space-y-0`}
       >
         <div
