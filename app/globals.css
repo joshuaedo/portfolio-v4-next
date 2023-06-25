@@ -37,7 +37,7 @@ html.lenis {
   }
 
   .header-text {
-    @apply text-6xl md:text-9xl text-[#A3A3A3] font-medium;
+    @apply text-5xl md:text-9xl text-[#A3A3A3] font-medium;
   }
 
   .section-text {
