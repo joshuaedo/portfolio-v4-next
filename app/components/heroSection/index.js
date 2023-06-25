@@ -3,16 +3,16 @@ export default function HeroSection() {
   return (
     <>
       <div className="header-text mt-24">
-        <div className='flex justify-start'>
+        <div className="flex justify-start">
           <p className="">SOFTWARE</p>
         </div>
-         <div className='flex justify-end'>
+        <div className="flex justify-end">
           <p className="">DEVELOPER</p>
         </div>
       </div>
 
       <div className="flex justify-end mt-3">
-        <span className="title-text max-w-[50%] text-end line-height">
+        <span className="title-text max-w-[50vw] text-end line-height">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
       </div>
