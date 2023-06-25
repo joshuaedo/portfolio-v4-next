@@ -48,8 +48,8 @@ html.lenis {
     @apply font-medium text-xs md:text-sm tracking-widest line-height;
   }
 }
-
-.disable-select {
+html,
+body {
   /* Disable dragging elements */
   user-drag: none;
   -moz-user-drag: none;
@@ -65,7 +65,6 @@ html.lenis {
   -khtml-user-select: none;
   -o-user-select: none;
 }
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;

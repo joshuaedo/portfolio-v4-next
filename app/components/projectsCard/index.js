@@ -10,7 +10,7 @@ export default function ProjectsCard({ i, name, href }) {
   };
 
   return (
-    <div className="px-[1.5rem] md:pl-[2rem] relative disable-select">
+    <div className="px-[1.5rem] md:pl-[2rem] relative">
       <Link href={`https://${href}`} target="_blank" rel="noopener noreferrer">
         <div
           className="flex items-center justify-center cursor-pointer"
