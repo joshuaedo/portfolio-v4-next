@@ -13,8 +13,8 @@ export default function index({ index, title, setModal, year }) {
       }}
       className={styles.project}
     >
-      <h2 className="text-4xl">{title}</h2>
-      <p className="">{year}</p>
+      <h2 className="section-text">{title}</h2>
+      <p className="text-xs md:text-sm">{year}</p>
     </div>
   );
 }

@@ -6,15 +6,15 @@ const projects = [
     year: 2023,
   },
   {
-    title: "joshuaGPT",
-    src: "joshuaGPT.png",
-    color: "#8C8C8C",
-    year: 2023,
-  },
-  {
     title: "Netflix",
     src: "netflix.png",
     color: "#EFE8D3",
+    year: 2023,
+  },
+  {
+    title: "Google",
+    src: "google.png",
+    color: "#706D63",
     year: 2023,
   },
   // {
@@ -29,25 +29,30 @@ const projects = [
     year: 2023,
   },
   {
-    title: "My Blog",
+    title: "Portfolio V3",
+    src: "portfolio-v3.png",
+    color: "#8C8C8C",
+    year: 2023,
+  },
+  {
+    title: "Blog",
     src: "blog.png",
     color: "#8C8C8C",
     year: 2023,
   },
-    {
+  {
     title: "Cleander",
     src: "cleander.png",
     color: "#FFF",
     year: 2022,
   },
-  
   {
-    title: "Google",
-    src: "google.png",
-    color: "#706D63",
+    title: "joshuaGPT",
+    src: "joshuaGPT.png",
+    color: "#8C8C8C",
     year: 2023,
   },
- {
+  {
     title: "Style Your Div",
     src: "style-your-div.png",
     color: "#FFF",
@@ -77,13 +82,6 @@ const projects = [
     color: "#706D63",
     year: 2022,
   },
- 
-  {
-    title: "Portfolio V3",
-    src: "portfolio-v3.png",
-    color: "#8C8C8C",
-    year: 2023,
-  },
   {
     title: "Portfolio V2",
     src: "portfolio-v2.png",
@@ -98,4 +96,4 @@ const projects = [
   },
 ];
 
-export {projects}
+export { projects };
