@@ -1,16 +1,19 @@
 export default function HeroSection() {
   return (
     <>
-      <div className="text-center md:text-end relative">
-        <p className="mr-0 md:mr-16 text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
-          SOFTWARE
-        </p>
-        <p className="text-5xl md:text-9xl drop-shadow-lg text-[#A3A3A3]">
-          ENGINEER
-        </p>
-        <p className="md:font-normal text-2xs md:text-sm inline">
+      <div className="header-text mt-24">
+        <p className="">SOFTWARE</p>
+        <p className="ml-4 md:ml-20">DEVELOPER</p>
+      </div>
+
+      <div className="flex justify-end mt-3">
+        <span className="title-text">AVAILABLE FOR HIRE</span>
+      </div>
+
+      <div className="flex justify-end mt-32">
+        <span className="title-text max-w-[50%] text-end line-height">
           SPECIALIZED IN FRONTEND DEVELOPMENT
-        </p>
+        </span>
       </div>
     </>
   );

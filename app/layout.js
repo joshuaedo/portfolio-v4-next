@@ -14,21 +14,21 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <Suspense fallback={<Loader />}>
-      <html lang="en">
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,201,1,300,600,400,700&display=swap"
-          rel="stylesheet"
-        />
-        <body className={`bg-black text-white tracking-wider w-full`}>
+    <html lang="en">
+      <link
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,201,1,300,600,400,700&display=swap"
+        rel="stylesheet"
+      />
+      <body className={`bg-black text-white tracking-wider w-full`}>
+        <Suspense fallback={<Loader />}>
           <Cursor />
           <LenisScroller />
           <Navbar />
           <MobileNavbar />
           {children}
           <Footer />
-        </body>
-      </html>
-    </Suspense>
+        </Suspense>
+      </body>
+    </html>
   );
 }

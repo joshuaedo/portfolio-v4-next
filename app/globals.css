@@ -28,8 +28,20 @@ html.lenis {
     @apply hover:underline cursor-pointer;
   }
 
-  .nav-link {
-    @apply cursor-pointer hover:opacity-75;
+  .container-padding {
+    @apply p-5;
+  }
+
+  .section-padding {
+    @apply md:px-52 min-h-[88vh];
+  }
+
+  .header-text {
+    @apply text-6xl md:text-9xl text-[#A3A3A3] font-medium;
+  }
+
+  .title-text {
+    @apply font-medium text-xs md:text-sm tracking-widest;
   }
 }
 
@@ -46,7 +58,7 @@ body {
 }
 
 .line-height {
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 html,

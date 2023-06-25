@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function ProjectsSection() {
   return (
     <>
-      <div className="text-center md:text-start">
+      <div className="text-center md:text-start mt-24">
         <p className="text-4xl md:text-7xl drop-shadow-lg text-[#A3A3A3] border-b-2">
           PROJECTS
         </p>
-        <p className="text-2xs md:text-sm inline">A SELECTION OF MY WORK</p>
+        <p className="title-text inline">A SELECTION OF MY WORK</p>
       </div>
       <div className="mt-20 md:mt-40">
         <div className="inline md:flex justify-around items-center space-y-32 md:space-y-1">
