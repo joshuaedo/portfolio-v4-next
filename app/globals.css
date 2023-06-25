@@ -49,7 +49,8 @@ html.lenis {
   }
 }
 html,
-body {
+body,
+a {
   /* Disable dragging elements */
   user-drag: none;
   -moz-user-drag: none;
