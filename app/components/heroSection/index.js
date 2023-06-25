@@ -12,7 +12,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex justify-end mt-3">
-        <span className="title-text max-w-[50vw] text-end line-height">
+        <span className="title-text max-w-[75%] text-end line-height">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
       </div>
