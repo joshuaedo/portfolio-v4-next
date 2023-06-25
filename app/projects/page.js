@@ -9,7 +9,7 @@ export default function ProjectsPage() {
   const [modal, setModal] = useState({ active: false, index: 0 });
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main}`}>
       <div className={styles.body}>
         {projects.map((project, index) => {
           return (
