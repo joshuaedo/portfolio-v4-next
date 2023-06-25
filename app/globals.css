@@ -25,7 +25,7 @@ html.lenis {
 
 @layer components {
   .link {
-    @apply hover:underline underline-offset-4 decoration-2 decoration-[#A3A3A3] cursor-pointer;
+    @apply hover:underline underline-offset-4 decoration-1 decoration-[#A3A3A3] cursor-pointer;
   }
 
   .container-padding {
