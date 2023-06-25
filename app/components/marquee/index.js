@@ -62,7 +62,7 @@ export default function NameMarquee() {
   );
 }
 
-export function Marquee(text) {
+export function Marquee({ text, bgColor }) {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -97,11 +97,11 @@ export function Marquee(text) {
   };
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main} ${bgColor}`}>
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>{text}</p>
-          <p ref={secondText}>{text}</p>
+          <p ref={`${firstText} text-black`}>{text}</p>
+          <p ref={`${secondText} text-black`}>{text}</p>
         </div>
       </div>
     </main>
