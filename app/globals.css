@@ -49,6 +49,11 @@ html.lenis {
   }
 }
 
+img {
+  user-select: none;
+  user-zoom: none;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
