@@ -3,8 +3,12 @@ export default function HeroSection() {
   return (
     <>
       <div className="header-text mt-24">
-        <p className="">SOFTWARE</p>
-        <p className="ml-4 md:ml-20">DEVELOPER</p>
+        <div className='flex justify-start'>
+          <p className="">SOFTWARE</p>
+        </div>
+         <div className='flex justify-end'>
+          <p className="">DEVELOPER</p>
+        </div>
       </div>
 
       <div className="flex justify-end mt-3">
