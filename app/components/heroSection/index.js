@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Arrow } from "../image";
 export default function HeroSection() {
   return (
     <>
@@ -19,8 +20,9 @@ export default function HeroSection() {
 
       <div className="flex justify-end mt-32">
         <Link href="/#contact">
-          <span className="title-text link">AVAILABLE FOR HIRE</span>
+          <span className="title-text link">AVAILABLE FOR HIRE</span>{" "}
         </Link>
+     
       </div>
     </>
   );

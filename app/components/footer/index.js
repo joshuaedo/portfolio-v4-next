@@ -9,7 +9,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer id="contact" className={`bg-black p-4 md:p-10`}>
+      <footer id="contact" className={`bg-black px-4 md:px-10`}>
         <div
           className={`uppercase text-3xl md:text-6xl font-semibold italic w-[90%pb-7]`}
         >
@@ -69,9 +69,11 @@ export default function Footer() {
             />
           </Link>
         </div>
-        <div className={`flex justify-between text-center`}>
+        <div
+          className={`flex justify-around items-center text-center h-10 title-text`}
+        >
           <p>{date}</p>
-          <p>{currentTime}</p> <p>{wish}</p>
+          <p className="hidden md:inline">{currentTime}</p> <p>{wish}</p>
         </div>
       </footer>
     </>

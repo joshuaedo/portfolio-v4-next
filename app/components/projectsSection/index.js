@@ -1,6 +1,7 @@
 "use client";
 import ProjectsCard from "../projectsCard";
 import Link from "next/link";
+import { Arrow } from "../image";
 
 export default function ProjectsSection() {
   return (
@@ -41,9 +42,10 @@ export default function ProjectsSection() {
       </div>
       <div className="line-height title-text link hidden md:flex absolute bottom-10 right-10 md:right-3 text-sm max-w-[7rem] md:max-w-[10rem] text-right">
         <Link href="/projects">VIEW THE REST OF MY WORK</Link>
+       
       </div>
       <div className="title-text link flex md:hidden text-xs items-center justify-center pt-10">
-        <Link href="/projects">VIEW THE REST OF MY WORK</Link>
+        <Link href="/projects">VIEW THE REST OF MY WORK ↗ →</Link>
       </div>
     </>
   );
