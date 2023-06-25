@@ -6,9 +6,7 @@ export default function ProjectsSection() {
   return (
     <>
       <div className="text-center md:text-start mt-24">
-        <p className="text-4xl md:text-7xl drop-shadow-lg text-[#A3A3A3] border-b-2">
-          PROJECTS
-        </p>
+        <p className="section-text">PROJECTS</p>
         <p className="title-text inline">A SELECTION OF MY WORK</p>
       </div>
       <div className="mt-20 md:mt-40">
@@ -41,10 +39,10 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex absolute bottom-10 right-10 md:right-3 text-sm max-w-[7rem] md:max-w-[10rem] text-right">
+      <div className="line-height title-text link hidden md:flex absolute bottom-10 right-10 md:right-3 text-sm max-w-[7rem] md:max-w-[10rem] text-right">
         <Link href="/projects">VIEW THE REST OF MY WORK</Link>
       </div>
-      <div className="flex md:hidden text-xs items-center justify-center pt-10">
+      <div className="title-text link flex md:hidden text-xs items-center justify-center pt-10">
         <Link href="/projects">VIEW THE REST OF MY WORK</Link>
       </div>
     </>

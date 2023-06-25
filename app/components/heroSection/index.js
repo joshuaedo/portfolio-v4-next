@@ -7,13 +7,13 @@ export default function HeroSection() {
       </div>
 
       <div className="flex justify-end mt-3">
-        <span className="title-text">AVAILABLE FOR HIRE</span>
-      </div>
-
-      <div className="flex justify-end mt-32">
         <span className="title-text max-w-[50%] text-end line-height">
           SPECIALIZED IN FRONTEND DEVELOPMENT
         </span>
+      </div>
+
+      <div className="flex justify-end mt-32">
+        <span className="title-text">AVAILABLE FOR HIRE</span>
       </div>
     </>
   );

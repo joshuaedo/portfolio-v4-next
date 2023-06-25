@@ -25,7 +25,7 @@ html.lenis {
 
 @layer components {
   .link {
-    @apply hover:underline cursor-pointer;
+    @apply hover:underline underline-offset-4 decoration-2 decoration-[#A3A3A3] cursor-pointer;
   }
 
   .container-padding {
@@ -40,8 +40,12 @@ html.lenis {
     @apply text-6xl md:text-9xl text-[#A3A3A3] font-medium;
   }
 
+  .section-text {
+    @apply text-5xl md:text-8xl text-[#A3A3A3] font-medium;
+  }
+
   .title-text {
-    @apply font-medium text-xs md:text-sm tracking-widest;
+    @apply font-medium text-xs md:text-sm tracking-widest line-height;
   }
 }
 
@@ -60,6 +64,10 @@ body {
 .line-height {
   line-height: 1.8;
 }
+
+/* @media only screen and (min-width: 600px) {
+ 
+} */
 
 html,
 body,
