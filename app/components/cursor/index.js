@@ -41,7 +41,7 @@ const Cursor = () => {
           src="/images/stain.png"
           width={90}
           height={90}
-          className="hidden md:flex fixed w-[70px] h-[70px] transition mix-blend-difference backdrop-filter backdrop-grayscale z-20 pointer-events-none"
+          className="hidden md:flex fixed w-[70px] h-[70px] transition mix-blend-difference z-20 pointer-events-none"
           style={cursorStyle}
           alt="stain"
         />
