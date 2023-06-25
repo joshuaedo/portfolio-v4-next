@@ -1,4 +1,4 @@
-import NameMarquee from "./components/marquee";
+import NameMarquee from "./components/nameMarquee";
 import HeroSection from "./components/heroSection";
 import ProjectsSection from "./components/projectsSection";
 

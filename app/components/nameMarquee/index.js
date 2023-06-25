@@ -3,8 +3,14 @@ import styles from "./style.module.css";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Kalam } from "next/font/google";
 
-export default function Marquee({ text, bgColor }) {
+const kalam = Kalam({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+export default function NameMarquee() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -39,13 +45,20 @@ export default function Marquee({ text, bgColor }) {
   };
 
   return (
-    <main className={`${styles.main} ${bgColor}`}>
+    <main className={styles.main}>
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>{text}</p>
-          <p ref={secondText}>{text}</p>
+          <p ref={firstText}>
+            <b>Edo</b> • Joshua • <i>THOMAS</i> • Akpan •{" "}
+            <span className={kalam.className}>ANIEKAN</span> • =) •
+          </p>
+          <p ref={secondText}>
+            <b>Edo</b> • Joshua • <i>THOMAS</i> • Akpan •{" "}
+            <span className={kalam.className}>ANIEKAN</span> • =) •
+          </p>
         </div>
       </div>
     </main>
   );
 }
+
