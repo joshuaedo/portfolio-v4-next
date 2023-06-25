@@ -14,7 +14,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex justify-end mt-32">
-        <Link href="/#contact" onClick="lenis.scrollTo('#/contact')">
+        <Link href="/#contact">
           <span className="title-text link">AVAILABLE FOR HIRE</span>
         </Link>
       </div>
