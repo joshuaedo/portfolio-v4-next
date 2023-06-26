@@ -1,10 +1,20 @@
 "use client";
 import styles from "./style.module.css";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-export default function Marquee({ text, bgColor }) {
+export default function Marquee({ text, bgColor, stagnantText }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleStopHover = () => {
+    setIsHovered(false);
+  };
+
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -39,13 +49,29 @@ export default function Marquee({ text, bgColor }) {
   };
 
   return (
-    <main className={`${styles.main} ${bgColor}`}>
-      <div className={styles.sliderContainer}>
-        <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>{text}</p>
-          <p ref={secondText}>{text}</p>
-        </div>
-      </div>
+    <main
+      className={`${styles.main} ${isHovered ? bgColor : "bg-black"}`}
+      onMouseOver={handleHover}
+      onMouseLeave={handleStopHover}
+    >
+      {isHovered ? (
+        <>
+          <div className={styles.sliderContainer}>
+            <div ref={slider} className={styles.slider}>
+              <p className="text-black" ref={firstText}>
+                {text}
+              </p>
+              <p className="text-black" ref={secondText}>
+                {text}
+              </p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <p className="text-white">{stagnantText}</p>
+        </>
+      )}
     </main>
   );
 }

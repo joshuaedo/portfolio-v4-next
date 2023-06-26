@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export const LenisScroller = () => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 2.5,
+      duration: 3.0,
       easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
       direction: "vertical",
       gestureDirection: "vertical",

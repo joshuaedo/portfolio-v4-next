@@ -3,8 +3,12 @@ import Link from "next/link";
 import styles from "./style.module.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useDate } from "../footer/useDate";
 
 export default function MobileNavbar() {
+  const { date, time, wish } = useDate();
+  const currentTime = time || getCurrentTime();
+
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const openNavPage = () => {
@@ -25,7 +29,7 @@ export default function MobileNavbar() {
   return (
     <>
       {!isCollapsed ? (
-        <div className="flex md:hidden h-[12vh] w-full bg-black bg-opacity-50 p-4 md:p-10 items-center justify-between text-lg sticky top-0 z-10">
+        <div className="flex md:hidden h-[12vh] w-full bg-black bg-opacity-50 p-4 items-center justify-between text-lg sticky top-0 z-10">
           <div className="inline font-medium cursor-pointer">
             <Link href="/">Joshua Edo</Link>
           </div>
@@ -39,8 +43,8 @@ export default function MobileNavbar() {
           </div>
         </div>
       ) : (
-        <div className=" md:hidden bg-[#A3A3A3] h-screen w-screen sticky top-0 z-10 text-black">
-          <div className="flex h-[12vh] w-full p-4 md:p-10 items-center justify-between text-lg">
+        <div className="p-4 md:hidden bg-[#A3A3A3] h-screen w-full sticky top-0 z-10 text-black ">
+          <div className="flex h-[12vh] w-full items-center justify-between text-lg mobile-nav__header">
             <div className="inline font-medium cursor-pointer">
               <Link href="/">Joshua Edo</Link>
             </div>
@@ -54,8 +58,8 @@ export default function MobileNavbar() {
             </div>
           </div>
 
-          <div className="h-[75vh] relative p-5">
-            <div className="space-y-6 absolute bottom-10">
+          <div className="h-[88vh] relative p-5">
+            <div className="space-y-10 pt-24">
               <div
                 onClick={() => navigateToLink("/")}
                 className={styles.project}
@@ -78,9 +82,16 @@ export default function MobileNavbar() {
                 onClick={() => navigateToLink("/contact")}
                 className={styles.project}
               >
-                <h2>CONTACT</h2>
+                <p>Let&apos;s Talk →</p>
               </div>
             </div>
+          </div>
+
+          <div
+            className={`sticky bottom-0 flex justify-between items-center text-center h-[10vh] title-text mobile-nav__footer`}
+          >
+            <p>{date}</p>
+            <p className="">{currentTime}</p> <p>{wish}</p>
           </div>
         </div>
       )}
