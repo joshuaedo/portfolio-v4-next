@@ -1,6 +1,13 @@
+"use client";
+
 export default function Skills() {
   return (
     <div className="">
+      <div>
+        <video autoPlay muted loop>
+          <source src="/videos/lifting-the-trophy.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="flex justify-center items-center">
         <div className="bg-green-500 text-black">
           <p className="title-text">SKILLS</p>
