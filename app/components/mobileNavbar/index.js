@@ -43,7 +43,7 @@ export default function MobileNavbar() {
           </div>
         </div>
       ) : (
-        <div className="p-4 md:hidden bg-[#A3A3A3] h-screen w-full sticky top-0 z-10 text-black ">
+        <div className="relative p-4 md:hidden bg-[#A3A3A3] h-screen w-full sticky top-0 z-10 text-black ">
           <div className="flex h-[12vh] w-full items-center justify-between text-lg mobile-nav__header">
             <div className="inline font-medium cursor-pointer">
               <Link href="/">Joshua Edo</Link>
