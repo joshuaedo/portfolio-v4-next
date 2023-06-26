@@ -2,6 +2,11 @@ import NameMarquee from "./components/nameMarquee";
 import HeroSection from "./components/heroSection";
 import ProjectsSection from "./components/projectsSection";
 
+export const metadata = {
+  title: "Joshua Edo • Home",
+  description: "Joshua Edo's Portfolio Website's HomePage",
+};
+
 export default function HomePage() {
   return (
     <>

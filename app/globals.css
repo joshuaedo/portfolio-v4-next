@@ -33,7 +33,7 @@ html.lenis {
   }
 
   .section-padding {
-    @apply md:px-52 min-h-[78vh] md:min-h-[88vh];
+    @apply md:px-52 min-h-[58vh] md:min-h-[88vh];
   }
 
   .header-text {

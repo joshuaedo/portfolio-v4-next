@@ -1,7 +1,6 @@
 "use client";
 import ProjectsCard from "../projectsCard";
 import Link from "next/link";
-import { Arrow } from "../image";
 
 export default function ProjectsSection() {
   return (
@@ -10,7 +9,7 @@ export default function ProjectsSection() {
         <p className="section-text">PROJECTS</p>
         <p className="title-text inline">A SELECTION OF MY WORK</p>
       </div>
-      <div className="mt-20 md:mt-40">
+      <div className="mt-20 md:mt-40 mb-16">
         <div className="inline md:flex justify-around items-center space-y-32 md:space-y-1">
           {" "}
           <div className="space-y-32">
