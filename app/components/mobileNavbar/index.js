@@ -58,7 +58,7 @@ export default function MobileNavbar() {
             </div>
           </div>
 
-          <div className="h-[78vh] relative p-5">
+          <div className="h-[76vh] relative p-5">
             <div className="space-y-10 pt-24">
               <div
                 onClick={() => navigateToLink("/")}
@@ -88,7 +88,7 @@ export default function MobileNavbar() {
           </div>
 
           <div
-            className={`sticky bottom-0 flex justify-between items-center text-center h-[10vh] title-text mobile-nav__footer`}
+            className={`flex justify-between items-center text-center h-[12vh] title-text mobile-nav__footer`}
           >
             <p>{date}</p>
             <p className="">{currentTime}</p> <p>{wish}</p>
