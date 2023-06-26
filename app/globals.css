@@ -49,6 +49,12 @@ html.lenis {
   }
 }
 
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+
 input,
 textarea,
 button,
