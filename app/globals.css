@@ -53,13 +53,15 @@ input,
 textarea,
 button,
 select,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
 html,
 body,
 a {
+  /* Disable blue-highlight */
+  -moz-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -khtml-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+
   /* Disable dragging elements */
   user-drag: none;
   -moz-user-drag: none;
