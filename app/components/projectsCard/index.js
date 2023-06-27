@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectsCard({ i, name, href }) {
+export default function ProjectsCard({ i, name, slug }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -11,7 +11,7 @@ export default function ProjectsCard({ i, name, href }) {
 
   return (
     <div className="px-[1.5rem] md:pl-[2rem] relative">
-      <Link href={`https://${href}`} target="_blank" rel="noopener noreferrer">
+      <Link href={`/projects/${slug}`}>
         <div
           className="flex items-center justify-center cursor-pointer"
           onMouseEnter={handleHover}

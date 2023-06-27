@@ -19,6 +19,7 @@ export default function ProjectsPage() {
               setModal={setModal}
               key={index}
               year={project.year}
+              slug={project.slug}
             />
           );
         })}
