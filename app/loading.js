@@ -35,7 +35,7 @@ export function HomeLoader() {
     <>
       {isLoading ? (
         <>
-          <div className="text-xl sticky inset-x-0 top-0 h-[100vh] z-50 bg-black tracking-widest">
+          <div className="text-xl absolute inset-x-0 top-0 h-[300vh] z-50 bg-black tracking-widest">
             <div className="h-screen flex justify-center items-center">
               <>
                 {isSpinning ? (
@@ -55,6 +55,8 @@ export function HomeLoader() {
                 )}
               </>
             </div>
+            <div className="h-screen flex justify-center items-center" />
+            <div className="h-screen flex justify-center items-center" />
           </div>
         </>
       ) : (
