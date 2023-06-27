@@ -2,7 +2,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <>
-      <div
+      <nav
         className={`hidden md:flex h-[12vh] w-full bg-black bg-opacity-50 p-4 md:p-10 items-center justify-between text-lg sticky top-0 z-10`}
       >
         <div className={`inline font-medium cursor-pointer`}>
@@ -28,7 +28,7 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
