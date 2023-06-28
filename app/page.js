@@ -4,7 +4,7 @@ import ProjectsSection from "./components/projectsSection";
 
 export const metadata = {
   title: "Joshua Edo • Home",
-  description: "Joshua Edo's Portfolio Website's HomePage",
+  description: "Joshua Edo's HomePage",
 };
 
 export default function HomePage() {

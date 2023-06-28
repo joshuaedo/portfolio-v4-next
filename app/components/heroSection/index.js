@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <>
-      <div className="text-6xl md:text-9xl header-text mt-20">
+      <div className="text-soft md:text-9xl header-text mt-20">
         <div className="flex justify-center md:justify-start">
           <p className="">SOFTWARE</p>
         </div>

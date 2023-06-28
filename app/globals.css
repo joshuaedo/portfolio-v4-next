@@ -12,9 +12,20 @@
   0% {
     opacity: 0;
   }
-  100% {
+  25% {
     opacity: 1;
   }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.text-soft {
+  font-size: 3.25rem;
+  line-height: 1;
 }
 
 /* Lenis */
