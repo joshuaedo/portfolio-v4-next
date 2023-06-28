@@ -10,6 +10,29 @@ import { HomeLoader } from "./loading";
 export const metadata = {
   title: "Joshua Edo • Software Developer",
   description: "Joshua Edo's Portfolio Website",
+  twitter: {
+    card: "summary",
+    title: "Joshua Edo • Software Developer",
+    description: "Joshua Edo's Portfolio Website",
+    creator: "@joshuaedo",
+    images: [
+      "https://res.cloudinary.com/dnw9fplsw/image/upload/v1687950201/%3D%29.png",
+    ],
+  },
+  openGraph: {
+    title: "Joshua Edo • Software Developer",
+    description: "Joshua Edo's Portfolio Website",
+    url: "https://joshuaedo.com",
+    siteName: "joshuaedo",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dnw9fplsw/image/upload/v1687950201/%3D%29.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
