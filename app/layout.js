@@ -4,10 +4,10 @@ import Footer from "./components/footer";
 import MobileNavbar from "./components/mobileNavbar";
 import { LenisScroller } from "./components/lenisScroller";
 // import Cursor from "./components/cursor";
-import Loader from "./loading";
 import { HomeLoader } from "./loading";
 
 export const metadata = {
+  metadataBase: new URL("https://joshuaedo.com"),
   title: "Joshua Edo • Software Developer",
   description: "Joshua Edo's Portfolio Website",
   twitter: {
