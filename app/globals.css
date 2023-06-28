@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .me {
-  animation: fadeInAnimation ease 2s;
+  animation: fadeInAnimation ease 2.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -24,7 +24,7 @@
 }
 
 .text-soft {
-  font-size: 3.25rem;
+  font-size: 3.45rem;
   line-height: 1;
 }
 
